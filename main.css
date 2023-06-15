@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=PT+Sans:ital,wght@1,700&display=swap');
+
+
+
+body {
+    background-image: url('https://i.ibb.co/w4nkMzH/thor.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0%;
+    margin: 0%;
+    overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.main {
+    /* border: 2px solid red; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main nav {
+    /* border: 3px solid beige; */
+    display: flex;
+    color: aliceblue;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.7063200280112045) 35%, rgba(0, 212, 255, 1) 100%);
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    width: 100%;
+
+}
+
+.main nav span {
+    font-size: 1.3rem;
+    margin-right: 2%;
+    color: black;
+    font-weight: 600;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchbar {
+    /* border: 2px solid red; */
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#searchbar input {
+    width: 70%;
+    height: 5vh;
+    border-radius: 20px;
+    color: rgb(222, 227, 231);
+    /* padding: 1%; */
+    border: none;
+    font-size: 1.1rem;
+    background: rgb(63, 172, 13);
+    background: linear-gradient(90deg, rgba(31, 172, 153, 0.832) 0%, rgba(73, 80, 255, 0.7175245098039216) 50%, rgba(4, 0, 255, 1) 100%);
+}
+
+input::placeholder {
+    color: aliceblue;
+
+}
+
+#displayHeroSearchResults {
+    border: 2px solid wheat;
+    height: 100%;
+    overflow: scroll;
+    width: 90%;
+}
+
+.results::-webkit-scrollbar {
+    display: none;
+}
+
+#search-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#superhero-list {
+    /* background-color: aqua; */
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    padding: 1%;
+    justify-content: space-evenly;
+}
+
+.hero-list::-webkit-scrollbar {
+    display: none;
+}
+
+.display-cards {
+    /* background-color: black; */
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 60vh;
+    transition-duration: 1s;
+    margin-top: 2%;
+}
+.display-cards:hover{
+    box-shadow: 0px 7px 50px 10px  rgb(71, 7, 189);
+    width: 25%;
+    height: 70vh;
+}
+
+#superhero {
+    /* background-color: blue; */
+    height: 90%;
+}
+
+#info {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    background: rgb(201, 211, 241);
+    background: linear-gradient(90deg, rgba(201, 211, 241, 0.8323704481792717) 0%, rgba(144, 148, 231, 0.7175245098039216) 50%, rgba(163, 162, 232, 0.5830707282913166) 100%);
+}
+
+#buttons {
+    font-family: 'PT Sans', sans-serif;
+    background: rgb(201, 211, 241);
+    background: linear-gradient(90deg, rgba(201, 211, 241, 0.8323704481792717) 0%, rgba(144, 148, 231, 0.7175245098039216) 50%, rgba(163, 162, 232, 0.5830707282913166) 100%);
+    /* border: 2px solid red; */
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+}
+
+#img-cont {
+    width: 100%;
+    /* background-color: black; */
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-cont img {
+    width: 95%;
+    height: 95%;
+}
+
+#buttons button {
+   height: 80%;
+    width: 40%;
+    border-radius: 20px;
+    border: none;
+
+    background: rgb(255,134,142);
+background: linear-gradient(90deg, rgba(255,134,142,0.8323704481792717) 0%, rgba(255,39,54,0.7175245098039216) 50%, rgba(255,30,30,0.5830707282913166) 100%);
+}
+
+#buttons button:hover{
+    box-shadow: 0px 2px 5px 0px  rgb(175, 221, 9);
+}
